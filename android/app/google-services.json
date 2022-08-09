@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1084715120410",
+    "project_id": "naukri-d6f25",
+    "storage_bucket": "naukri-d6f25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084715120410:android:00253b52259382de881ea3",
+        "android_client_info": {
+          "package_name": "com.suraj.naukri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084715120410-0oohu1bkm6mqg8tpkka6cfsju3ke2e1e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.suraj.naukri",
+            "certificate_hash": "ac2959d5a99dcdcdf93fa800fd457e8060fc12b5"
+          }
+        },
+        {
+          "client_id": "1084715120410-43hgq4b4un8lgd1bvbcomcs67bd1bhqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4nFN1VkbvVNOoEbgqEEUN0m_hugF82vk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084715120410-43hgq4b4un8lgd1bvbcomcs67bd1bhqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

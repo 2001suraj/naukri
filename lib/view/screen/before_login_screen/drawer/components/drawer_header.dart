@@ -1,9 +1,9 @@
 // ignore_for_file: sized_box_for_whitespace, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:naukri/view/screen/before_login_screen/login_screen/login_screen.dart';
 import 'package:naukri/view/screen/register_screen/register_screen.dart';
 
-import '../../login_screen/login_screen.dart';
  Container buildHeader(BuildContext context) {
     return Container(
         height: 150,

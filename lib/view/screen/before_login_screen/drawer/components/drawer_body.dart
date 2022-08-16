@@ -1,13 +1,18 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:naukri/helper/buildListTile.dart';
-  Column buildBody() {
+import 'package:naukri/view/screen/search_screen/search_screen.dart';
+  Column buildBody(BuildContext context) {
     return Column(
           children: [
             BuildListTile(
               icon: Icon(Icons.search),
               title: 'Search jobs',
               subtitle: '',
-              tap: () {},
+              tap: () {
+                Navigator.push(context,MaterialPageRoute(builder: (context)=>SearchScreen()));
+              },
             ),
              BuildListTile(
               icon: Icon(Icons.chat),

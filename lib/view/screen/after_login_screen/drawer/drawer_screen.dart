@@ -2,14 +2,14 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:naukri/view/screen/before_login_screen/drawer/components/drawer_body.dart';
-import 'package:naukri/view/screen/before_login_screen/drawer/components/drawer_header.dart';
+import 'package:naukri/view/screen/after_login_screen/drawer/components/drawer_body.dart';
+import 'package:naukri/view/screen/after_login_screen/drawer/components/drawer_header.dart';
 
 
 
 
-class DrawerScreen extends StatelessWidget {
-  const DrawerScreen({Key? key}) : super(key: key);
+class LogDrawerScreen extends StatelessWidget {
+  const LogDrawerScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,9 +25,9 @@ class DrawerScreen extends StatelessWidget {
             children: [
               // view drawer component
              
-              buildHeader(context),
+              logbuildHeader(context),
               Divider(),
-              buildBody(context),
+              logbuildBody(context),
             ],
                 ),
               ),

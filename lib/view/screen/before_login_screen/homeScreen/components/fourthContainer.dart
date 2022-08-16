@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 Container buildfouthContainer() {
@@ -6,8 +8,7 @@ Container buildfouthContainer() {
     width: double.infinity,
     padding: EdgeInsets.symmetric(horizontal: 20),
     decoration: BoxDecoration(
-    color: Color.fromARGB(141, 255, 255, 255),
-
+      color: Color.fromARGB(141, 255, 255, 255),
       borderRadius: BorderRadius.only(
         topLeft: Radius.circular(20),
         topRight: Radius.circular(20),

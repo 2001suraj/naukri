@@ -5,6 +5,7 @@ import 'package:naukri/helper/build_register_button.dart';
 import 'package:naukri/helper/buildlogintextbutton.dart';
 import 'package:naukri/view/screen/before_login_screen/drawer/drawer_screen.dart';
 
+
 class InboxScreen extends StatelessWidget {
   const InboxScreen({Key? key}) : super(key: key);
 

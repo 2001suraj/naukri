@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
   Container buildSecondContainer(BuildContext context) {
     return Container(
@@ -20,38 +22,47 @@ import 'package:flutter/material.dart';
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal:20.0),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        label: Text(
-                          'Enter skills, designations, companies',
-                        ),
-                      ),
-                    ),
-                  ),
-                               Padding(
-                    padding: const EdgeInsets.symmetric(horizontal:20.0),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        label: Text(
-                          'Enter location',
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 20,),
-                   MaterialButton(
-                    minWidth: 110,
-                    height: 40,
-                    color: Colors.purple,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    onPressed: () {},
-                    child: Text('Search  jobs ',
-                        style: TextStyle(color: Colors.white)),
-                  ),
+                  buildTextFieldcolumn(Sheight: 20),
+               
                 ],
               ));
+  }
+
+  Column buildTextFieldcolumn(  {required double Sheight}) {
+    return Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal:20.0),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          label: Text(
+                            'Enter skills, designations, companies',
+                          ),
+                        ),
+                      ),
+                    ),
+                                    Padding(
+                  padding: const EdgeInsets.symmetric(horizontal:20.0),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      label: Text(
+                        'Enter location',
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: Sheight,),
+                 MaterialButton(
+                  minWidth: 110,
+                  height: 40,
+                  color: Colors.purple,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  onPressed: () {},
+                  child: Text('Search  jobs ',
+                      style: TextStyle(color: Colors.white)),
+                ),
+                  ],
+                );
   }

@@ -12,9 +12,9 @@ class AuthServices {
   }) async {
     String res = " some Error occured";
     try {
-      if (email.isNotEmpty ||
-          password.isNotEmpty ||
-          number.isNotEmpty ||
+      if (email.isNotEmpty &&
+          password.isNotEmpty &&
+          number.isNotEmpty &&
           name.isNotEmpty) {
         UserCredential credential = await auth.createUserWithEmailAndPassword(
           email: email,
@@ -33,7 +33,7 @@ class AuthServices {
     String res = " some error occured";
 
     try {
-      if (email.isNotEmpty || password.isNotEmpty) {
+      if (email.isNotEmpty && password.isNotEmpty) {
         UserCredential credential = await auth.signInWithEmailAndPassword(
             email: email, password: password);
       }
